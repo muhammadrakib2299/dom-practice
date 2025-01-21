@@ -2,6 +2,25 @@
     box-sizing: border-box;
 }
 
+header{
+    text-align: center;
+    background-color: aqua;
+    padding: 10px 5px;
+    border-radius: 10px; 
+    margin-bottom: 2px;
+}
+
+header h1{
+    text-transform: uppercase;
+}
+
+main{
+    background-color: beige;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
 footer{
     color: black;
     padding: 5px 0px;
