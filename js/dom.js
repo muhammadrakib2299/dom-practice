@@ -62,3 +62,34 @@ makeGreenBtn.addEventListener('click', function(){
 document.getElementById('make-orrange-btn').addEventListener('click', function(){
     document.body.style.backgroundColor = 'orange';
 });
+
+// more event handaller using direct fuction
+function changingLingBtn(){
+    const defaultText = document.getElementById('default-text');
+    defaultText.innerText = "Hello, My name is Md.Rakib. Now I'm learing event handaller topic form ES6";
+
+};
+
+// Using event listener
+document.getElementById('btn-update').addEventListener('click', function(){
+    const inputFiled = document.getElementById('input-field');
+    const inputText = inputFiled.value;
+    const updateText = document.getElementById('update-text-line');
+    updateText.innerText = inputText;
+    inputFiled.value = ' ';
+});
+
+// get the commnet and display it 
+document.getElementById('btn-post').addEventListener('click', function(){
+    // get the comment text
+   const CommentBox = document.getElementById('comment-text');
+   const NewCommentText = CommentBox.value;
+    // display the comment 
+    const commnetContainer = document.getElementById('comment-container');
+    const p = document.createElement('p');
+    p.innerText = NewCommentText;
+    // append the comment into the comment contaier
+    commnetContainer.appendChild(p);
+    CommentBox.value = '';
+
+});
