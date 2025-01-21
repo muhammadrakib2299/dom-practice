@@ -37,7 +37,28 @@ ProjectsList.appendChild(projectItem);
 
 // Event Handaller 
 
+// onclick event 1
 const BlueBtn = document.getElementById('make-blue-btn');
 BlueBtn.onclick = function (){
     document.body.style.backgroundColor = 'blue';
 }
+
+
+// on click event 2
+const makeRedBtn = document.getElementById('make-red-btn');
+makeRedBtn.addEventListener('click', makeRed)
+// creating function
+function makeRed(){
+    document.body.style.backgroundColor = 'Red';
+}
+
+// on click event 3
+const makeGreenBtn = document.getElementById('make-green-btn');
+makeGreenBtn.addEventListener('click', function(){
+    document.body.style.backgroundColor = 'Green';
+});
+ 
+// on click event 4 for alawys use
+document.getElementById('make-orrange-btn').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'orange';
+});
