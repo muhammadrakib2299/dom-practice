@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-header{
+.topic-heading{
     text-align: center;
     background-color: aqua;
     padding: 10px 5px;
