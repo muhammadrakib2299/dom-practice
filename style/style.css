@@ -20,6 +20,14 @@ main{
     padding: 20px;
 }
 
+#basic-procets{
+    color: red;
+}
+
+.Advanced-project{
+    color: blue;
+}
+
 
 footer{
     color: black;
