@@ -25,3 +25,12 @@ console.log(intermidateProjects);
 // querySelector
 const intermidateProject = document.querySelector('.intermidate-projects li');
 console.log(intermidateProject);
+
+
+// Appendchild 
+const ProjectsList = document.getElementById('advanced-project-list');
+const projectItem = document.createElement('li');
+projectItem.innerText = "Massenger Chat application";
+
+// add the child into the list 
+ProjectsList.appendChild(projectItem);
