@@ -15,7 +15,6 @@ header h1{
 }
 
 main{
-    background-color: beige;
     border-radius: 15px;
     padding: 20px;
 }
@@ -27,6 +26,12 @@ main{
 .Advanced-project{
     color: blue;
 }
+
+.events-handaller{
+    padding: 20px 10px;
+}
+
+
 
 
 footer{

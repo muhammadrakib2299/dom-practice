@@ -34,3 +34,10 @@ projectItem.innerText = "Massenger Chat application";
 
 // add the child into the list 
 ProjectsList.appendChild(projectItem);
+
+// Event Handaller 
+
+const BlueBtn = document.getElementById('make-blue-btn');
+BlueBtn.onclick = function (){
+    document.body.style.backgroundColor = 'blue';
+}
