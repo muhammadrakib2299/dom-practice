@@ -93,3 +93,22 @@ document.getElementById('btn-post').addEventListener('click', function(){
     CommentBox.value = '';
 
 });
+
+// like as github delete confirmation project
+document.getElementById('input-filed').addEventListener('keyup', function(event){
+    const filedText = (event.target.value);
+    const deleteBtn = document.getElementById('btn-delete');
+    if(filedText === 'delete'){
+        deleteBtn.removeAttribute('disabled');
+    }
+    else{
+        deleteBtn.setAttribute('disabled', true);
+    }
+
+});
+document.getElementById('btn-delete').addEventListener('click', function(){
+    const filedText =  document.getElementById('input-filed');
+    const secretText = document.getElementById('screet-text');
+    secretText.style.display = 'none';
+    filedText.value = ' ';
+});
